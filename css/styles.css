@@ -13,11 +13,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: var(--title-color);
+  letter-spacing: 0.03em;
 }
 /* утиліти */
-.link  {
-  text-decoration: none;
-}
+
 ul {
   list-style: none;
 }
@@ -46,21 +45,20 @@ ul {
     color: var(--logo-color)
 }
 /* nav */
-.link {
-  color: var(--title-color)
+.list .link  {
+  font-weight: 500;
+  line-height: 1,14;
+  color: var(--title-color);
   text-decoration: none;
+  list-style: none;
 }
-.nav-mail{
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
+.mail,
 .tel {
     font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
 
 }
 .link-activ{
@@ -157,13 +155,14 @@ color: var(--text-color);
  line-height: 1.71;
  letter-spacing: 0.03em;
  color: var(--primary-white-color);
- font-style: normal; 
+ font-style: normal;
+ text-decoration: none; 
 }
 .address-mail,.adress-tel {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: var(--address-color)
+color: var(--address-color);
 font-style: normal; 
 text-decoration: none;
 }
@@ -173,7 +172,7 @@ text-decoration: none;
 .address-mail:hover,
 .address-mail:active,
 .address-tel:hover,
-.address-tel:active{
+.address-tel:active {
 color:var(--accent-color);
 }
 /* portfolio project */
@@ -183,6 +182,16 @@ color:var(--accent-color);
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
+
+.filter-item {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-color);
+}
+
 .project-subtitle {
     font-weight: 700;
 font-size: 18px;
@@ -190,6 +199,7 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: var(--title-color);
 }
+
 .project-text {
     font-weight: 400;
 font-size: 16px;
